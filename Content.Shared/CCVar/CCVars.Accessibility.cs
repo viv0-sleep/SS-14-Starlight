@@ -76,6 +76,12 @@ public sealed partial class CCVars
 
     #region Starlight
     /// <summary>
+    /// If enabled, switches the in-game chat font and the character's name font to a pixelated font reminiscent of SS13's font.
+    /// </summary>
+    public static readonly CVarDef<bool> AccessibilitySS13Font =
+            CVarDef.Create("accessibility.ss13_font", false, CVar.CLIENTONLY | CVar.ARCHIVE);
+
+    /// <summary>
     /// If enabled, censors spiders by replacing them with cubes.
     /// </summary>
     public static readonly CVarDef<bool> AccessibilityArachnophobia =
