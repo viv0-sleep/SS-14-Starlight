@@ -45,3 +45,9 @@
 - type: font
   id: Emoji
   path: /Fonts/NotoEmoji.ttf
+
+#SS13 Fonts
+
+- type: font
+  id: SS13Default
+  path: /Fonts/w95fa/W95F.otf
