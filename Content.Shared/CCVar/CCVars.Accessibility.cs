@@ -25,6 +25,13 @@ public sealed partial class CCVars
             CVar.CLIENTONLY | CVar.ARCHIVE,
             "Toggles displaying names with individual colors.");
 
+
+    /// <summary>
+    ///     Toggle for changing the font to something more pixelated that recreates the original SS13 runechat font style.
+    /// <summary>
+    public static readonly CVarDef<bool> AccessibilitySS13Font =
+        CVarDef.Create("accessibility.ss13_font", false, CVar.CLIENTONLY | CVar.ARCHIVE);
+
     /// <summary>
     ///     Screen shake intensity slider, controlling the intensity of the CameraRecoilSystem.
     ///     Goes from 0 (no recoil at all) to 1 (regular amounts of recoil)

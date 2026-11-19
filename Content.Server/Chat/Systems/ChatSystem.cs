@@ -1081,6 +1081,10 @@ public sealed partial class ChatSystem : SharedChatSystem
         if ((language.Speech.ObfuscationFont ?? false) && (!obfuscated ?? false))
             fonttype = speech.FontId;
 
+        if (!_configurationManager.GetCVar(CCVars.AccessibilitySS13Font))
+        {
+            fonttype = "SS13Default";
+
         // Apply default styling before the font tag so it does not replace a language's custom font.
         if (fonttype == "Default")
         {
@@ -1097,6 +1101,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             ("fontType", fonttype),
             ("fontSize", language.Speech.FontSize ?? speech.FontSize),
             ("message", message));
+    }
     }
     // Starlight - End
 
